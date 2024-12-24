@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Attendance Management</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Attendance Management System</h1>
+  </header>
+  <main>
+    <h2>Add Student</h2>
+    <form id="add-student-form">
+      <label for="student-name">Student Name:</label>
+      <input type="text" id="student-name" name="student-name" placeholder="Enter student name" required />
+
+      <button type="submit">Add Student</button>
+    </form>
+
+    <h2>Mark Attendance</h2>
+    <form id="attendance-form">
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="student">Student:</label>
+      <select id="student" name="student" required></select>
+
+      <label for="subject">Subject:</label>
+      <select id="subject" name="subject" required>
+        <option value="Maths">Maths</option>
+        <option value="Science">Science</option>
+        <option value="SST">SST</option>
+        <option value="Games">Games</option>
+        <option value="English">English</option>
+      </select>
+
+      <label for="status">Status:</label>
+      <select id="status" name="status">
+        <option value="present">Present</option>
+        <option value="absent">Absent</option>
+      </select>
+
+      <button type="submit">Submit Attendance</button>
+    </form>
+
+    <h2>View Attendance</h2>
+    <button id="view-attendance">View My Attendance</button>
+    <ul id="attendance-list"></ul>
+  </main>
+  <h2>Attendance Percentage</h2>
+<button id="view-attendance-percentage">View Attendance Percentage</button>
+  <script src="scripts.js"></script>
+</body>
+</html>
